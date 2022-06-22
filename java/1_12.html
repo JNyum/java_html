@@ -28,16 +28,19 @@
     <input type="button" value="click" onclick="
         document.querySelector('body').style.backgroundColor='green';
         document.querySelector('body').style.color='white'";>    
+    <div class="js">java script0</div>
     <div class="js">java script1</div>
     <div class="js">java script2</div>
-    <div class="js">java script3</div>
+    
     <input type="button" value="click click" onclick="
-        document.querySelector('.js').style.color='yellow';
-        //document.querySelectorAll('.js').style.color='yellow'";>
+        //document.querySelector('.js').style.color='yellow';
+        document.querySelectorAll('.js')[1].style.color='yellow';";>
         <script>/*Selector는 가장 빨리 검색되는 값을 반환하니 java script1이 반환될 것이라 생각했다. 
         버튼을 클릭하니 역시 1만 바뀌었다.
         SeletorAll은 조건이 맞는 값들을 배열로 반환하니 123 모두 바뀔 것이라 생각해서 해봤다.
-        근데 왜 전부 안 바뀜? 이건 내 예상이랑 좀 많이 다른데*/</script>    
+        근데 왜 전부 안 바뀜? 이건 내 예상이랑 좀 많이 다른데
+        + 아 배열 반환이니까 그 안의 요소를 새로 지정해야겠구나 */</script>
+           
     <input type="button" value="night" onmouseover="
         document.querySelector('body').style.backgroundColor='gray'">
     
