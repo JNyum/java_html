@@ -1,0 +1,32 @@
+<script>var body = document.querySelector('body')</script>
+<script>var state = 'white' </script>
+
+<div>aasdasdasdasdasd</div>
+<div>아래 버튼은 강의 예시. 내가 만든건 배경 글자 색이 하얗나 까맣나만 있고 night_day란 속성이 없어서 오류가 난다.</div>
+<input type="button" value="day/night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+        body.style.backgroundColor='white'
+        body.style.color='black'
+    }
+    else{
+        body.style.backgroundColor='black'
+        body.style.color='white'
+    }
+    ">
+<div>그래서 배경 색에 따라 토글되는 버튼을 만듦. 작동 잘 된다.</div>    
+    <input type="button" value="day/night" onclick="
+    if(this.state === 'black'){
+        body.style.backgroundColor='white'
+        body.style.color='black'
+        this.state = 'white'
+    }
+    else{
+        body.style.backgroundColor='black'
+        body.style.color='white'
+        this.state = 'black'
+    }    
+">
+<div>document.querySelector('body')를 body란 변수에 넣고 코드를 줄임.<br>
+    this는 뭐 어케하나 하다가<br>
+    변수 state를 하나 선언해주고 this.state를 써봤다. 
+</div>
