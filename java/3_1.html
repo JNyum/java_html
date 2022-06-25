@@ -1,0 +1,53 @@
+<script>
+    var fruits=['apple', 'banana', 'coconut']
+    var i=0
+
+    while(i < fruits.length){
+        document.write(i+1 + '. ' + fruits[i] +'<br>')
+        i++;
+    }
+</script>
+
+<script>
+    function nightdayhandler(){
+        if(self.state === 'white'){
+            body.style.backgroundColor='black'
+            body.style.color='white'
+            self.state = 'black'
+    
+            var link = document.querySelectorAll('a');
+            var i = 1
+            while(i < link.length){
+                link[i].style.color='powderblue'
+                i++
+            }
+            
+    
+        }
+        else{
+            body.style.backgroundColor='white'
+            body.style.color='black'
+            self.state = 'white'
+            var link = document.querySelectorAll('a');
+            var i = 1
+            while(i < link.length){
+                link[i].style.color='blue'
+                i++
+            }
+        }
+    }
+</script>
+
+<A class ="link" href="http://daum.net"><br>Link1</A>
+<A class ="link" href="http://daum.net"><br>Link2<br></A>
+<A class ="link" href="http://daum.net">Link3<br></A>
+
+<script>var body = document.querySelector('body')</script>
+<script>var state = 'white'</script>
+    <input type="button" value="day/night" onclick="nightdayhandler(this)">
+
+<style>
+    .link{
+        font-size: xx-large;
+    }
+</style>
